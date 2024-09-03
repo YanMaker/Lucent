@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="us" data-theme="light" data-urlBarPlacement="top">
+    <head>
+        <title>Lucent</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div id="topBar">
+            <div id="tabBar">
+                <div id="tabs"></div>
+                <img src="img/new_tab.png" alt="New tab" onclick="newTab()" />
+            </div>
+            <div id="navButtons">
+                <img
+                    class="nav"
+                    src="img/left_triangle.svg"
+                    alt="Back"
+                    onclick="back()"
+                />
+                <img
+                    class="nav"
+                    src="img/home.png"
+                    alt="Home"
+                    onclick="home()"
+                />
+                <img
+                    class="nav"
+                    src="img/right_triangle.svg"
+                    alt="Forward"
+                    onclick="forward()"
+                />
+            </div>
+        </div>
+        <form id="urlBar">
+            <input type="text" placeholder="Search or type a URL" />
+        </form>
+        <div id="newTabPage">
+            <form id="newTabUrlBar">
+                <input type="text" placeholder="Search or type a URL" />
+            </form>
+        </div>
+        <div id="urlRecommendations"></div>
+        <p id="hoverLink" class="visionOs"></p>
+
+        <script src="index.js"></script>
+        <script src="./node_modules/rss-parser/dist/rss-parser.min.js"></script>
+    </body>
+</html>

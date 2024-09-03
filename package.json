@@ -1,0 +1,21 @@
+{
+    "name": "lucent",
+    "projectName": "Lucent",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron ."
+    },
+    "author": "Lucent Browser",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^29.4.5",
+        "electron-builder": "^24.13.3"
+    },
+    "dependencies": {
+        "mica-electron": "^1.5.10",
+        "prettier": "^3.3.2"
+    }
+}
